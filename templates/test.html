@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+<!--HTML с синтаксисом Jinja-->
+<ul>
+    {% for item in cars -%}
+        {% if item.price > 100000 -%}
+        <li>Brand: {{ item.brand }}</li>
+        {% endif -%}
+    {% endfor -%}
+</ul>
+</body>
+</html>

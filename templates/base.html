@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    {% block content -%}
+    <p>This is a paragraph in base.html. If you want see it in child.html — use super()</p>
+    {% block table_content -%}
+        <ul>
+        {% for li in list_table -%}
+            <li>{% block item scoped %}{{li}}{% endblock item %}</li>
+        {% endfor -%}
+        </ul>
+    {% endblock table_content -%}
+    {% endblock content -%}
+</body>
+</html>

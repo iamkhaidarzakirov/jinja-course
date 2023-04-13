@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}About{% endblock title %}
+{% block content -%}
+    {{ super() }}
+    {% block item %}<p class="item">{{ super() }}</p> {% endblock item %}
+    <h1>{{self.title()}}</h1>
+    <p>This is about page</p>
+{% endblock content -%}
+
