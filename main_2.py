@@ -1,9 +1,9 @@
+"""Экранирование и блоки raw, for, if"""
+"""На этом уроке много материала и разные темы, поэтому представления сделаны в виде функций"""
+
 from jinja2 import Template
 from jinja2.filters import escape
 from test import cities
-
-"""Экранирование и блоки raw, for, if"""
-"""На этом уроке много материала и разные темы, поэтому представления сделаны в виде функций"""
 
 
 def demonstarate_raw() -> None:
